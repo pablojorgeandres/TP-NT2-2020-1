@@ -1,20 +1,19 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Bienvenidos NT2!</Text>
-      <Text>Proyecto a realizar: Cronometro Pomodoro.</Text>
-    </View>
-  );
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import Pomodoro from "./src/pomodoro";
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Pomodoro />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#000"
+  }
 });
